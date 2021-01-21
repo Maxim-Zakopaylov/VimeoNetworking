@@ -20,6 +20,14 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "VimeoNetworking",
-            path: "Sources"),
+            path: "Sources",
+            exclude: [
+                "Objc_ExceptionCatcher.m",
+                "Objc_ExceptionCatcher.h",
+                "Models",
+                "",
+                "Resources",
+                "ThirdParty",
+            ]),
     ]
 )
